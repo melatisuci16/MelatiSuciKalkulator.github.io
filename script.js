@@ -50,6 +50,15 @@ equalSign.addEventListener('click', () => {
     console.log(currentNumber)
 })
 
+const persens = document.querySelector(`.persen`)
+persens.addEventListener(`click`, (event) =>{
+    inputOperator(event.target.value)
+    calculate()
+    updateScreen(currentNumber)
+    console.log(currentNumber)
+})
+
+
 const calculate = () => {
     let result = ''
     switch(calculationOperator){
